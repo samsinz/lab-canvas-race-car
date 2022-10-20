@@ -93,6 +93,7 @@ class Obstacles {
         this.obstaclesList[i].draw();
         if (this.obstaclesList[i].y === 700) {
           this.score++;
+          // yeeting obstacle to the left, i wanted to splice old obstacles but it messed up the for loop and i didn't figure out how to fix it
           this.obstaclesList[i].x = -1000;
         } else if (
           this.obstaclesList[i].x < carImage.x &&
